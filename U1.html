@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta class="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Unidad 1</title>
+	<link rel="stylesheet" href="U1.css">
+</head>
+<body>
+	<nav class="navegacion">
+		<div id="its">
+			<img src="D:imagenes/ITS.png"= alt = "">
+		</div>
+		<ul>
+			<li><a href="index.html">Inicio</a></li>
+			<li><a href="U1.html">Unidad 1</a></li>
+			<li><a href="U2.html">Unidad 2</a></li>
+			<li><a href="U3.html">Unidad 3</a></li>
+			<li><a href="U4.html">Unidad 4</a></li>
+		</ul>
+	</nav>
+	<div class="main">
+		<section id="Temario">
+			<div id="temas">
+				<h2>
+				<b>Temario Unidad 1</b>
+				<br><b>Arquitecturas de Cómputo.</b>
+				<br>
+				<br>1.1 Modelos de arquitecturas de cómputo.
+				<br><i>1.1.1 Clásicas.</i>
+				<br><i>1.1.2 Segmentadas.</i>
+				<br><i>1.1.3 De multiprocesamiento.</i>
+				<br>
+				<br>1.2 Análisis de los componentes.
+				<br><i>1.2.1 Arquitecturas.</i>
+				<br><i>1.2.1.1 Unidad Central de Procesamiento.</i>
+				<br><i>1.2.1.2 Unidad Artmética lógica.</i>
+				<br><i>1.2.1.3 Registros.</i>
+				<br><i>1.2.1.4 Buses</i>
+				<br>
+				<br>1.2.2 Memoria.
+				<br><i>1.2.2.1 Conceptos básicos del manejo de memoria.</i>
+				<br><i>1.2.2.2 Memoria principal.</i>
+				<br><i>1.2.2.3 Memoria caché.</i>
+				<br>
+				<br>1.2.3 Manejo de la entrada/salida.
+				<br><i>1.2.3.1 Módulos de entrada/salida.</i>
+				<br><i>1.2.3.2 Entrada/salida programada.</i>
+				<br><i>1.2.3.3 Entrada/salida mediante interrupciones.</i>
+				<br><i>1.2.3.4 Canales y procesadores de entrada/salida.</i>
+				<br>
+				<br>1.2.4 Buses.
+				<br><i>1.2.4.1 Tipos de buses.</i>
+				<br><i>1.2.4.2 Estructura de los buses.</i>
+				<br><i>1.2.4.3 Jerarquías de buses.</i>
+				<br>
+				<br>1.2.5 Interrupciones.</h2>
+			</div>			
+		</section>
+	</div>
+	<div class="arcom"></div><!--Arquitectura de Computadoras-Inicio-->
+		<section id="introduccion">
+			<div id="intro">
+				<h1><b>Arquitectura de Computadoras</b><br>
+					<br>
+					La arquitectura de computadoras es el diseño y la organización de un sistema para un equipo de cómputo. Es un modelo y descripción de cada función, así como los requerimientos y las implementaciones de diseño para varias partes del equipo de cómputo. Arquitectura de Computadoras se enfoca principalmente en la Unidad Central de Procesamiento (CPU) el cual trabaja internamente y accede a las direcciones de memoria y a los sistemas de entrada-salida periféricos.
+				</h1>
+			</div>
+		</section>
+		<section id="MAC">
+			<div id="info1">
+				<h2><b>1.1.1Modelos de Arquitectura Clásicas</b><br>
+					<br>
+					Estas arquitecturas se desarrollaron en las primeras computadoras electromecánicas y de tubos de vacío. 
+					Hay dos arquitecturas distintas relacionadas con el uso y distribución de la memoria: Arquitectura de John Von Neumann y Arquitectura Harvard.
+	
+				</h2>
+			</div>
+		</section>
+		<section id="AVN">
+			<div id="info2">
+				<h3><i>Arquitectura Von Neumann:</i><br>
+					<br>
+					La arquitectura Von Neumann propone la utilización de una unidad central de procesamiento o CPU, que contiene una unidad aritmética-lógica capaz de llevar a cabo cálculos matemáticos sencillos, un conjunto de registros que permiten el almacenamiento temporal de datos y direcciones de memoria, y una unidad de control que se encarga de recoger las instrucciones desde la memoria principal, de decodificarlas y ejecutarlas. Además, este modelo de arquitectura también propone la existencia de una memoria principal en la que residen los datos y las instrucciones, y de un bus de entrada y salida que permite cargar los programas y los datos desde un medio de almacenamiento externo y entregar un resultado.</h3>
+			</div>
+		</section>
+		<div class="img1">
+			<img src="D:imagenes/VonN.jpg">
+		</div>
+		<section id="AH">
+			<div id="info3">
+				<h4><i>Arquitectura Harvard:</i><br>
+					<br>
+					Es una arquitectura de computadora con pistas de almacenamiento y de señal físicamente separadas para las instrucciones y para los datos. El nombre proviene de la computadora Harvard Mark I basada en relés, que almacenaba las instrucciones sobre cintas perforadas (de 24 bits de ancho) y los datos en interruptores electromecánicos. Estas primeras máquinas tenían almacenamiento de datos totalmente contenido dentro de la unidad central de proceso, y no proporcionaban acceso al almacenamiento de instrucciones como datos.
+				</h4>
+			</div>
+		</section>
+		<div class="img2">
+			<img src="D:imagenes/Har.png">
+		</div>
+		<section id="AS">
+			<div id="info4">
+				<h5><b>1.1.2 Arquitecturas Segmentadas.</b><br>
+					<br>
+					Las arquitecturas segmentadas o con segmentación del cauce, buscan mejorar el desempeño realizando paralelamente varias etapas del ciclo de instrucción al mismo tiempo.  El procesador se divide en varias unidades funcionales independientes y se dividen entre ellas el procesamiento de las instrucciones. Otra aportación frecuente que aumenta el rendimiento del computador es el fomento del paralelismo implícito, que consiste en la segmentación del procesador (pipe-line), descomponiéndolo en etapas para poder procesar una instrucción diferente en cada una de ellas y trabajar con varias a la vez.</h5>
+			</div>
+		</section>
+		<section id="AM">
+			<div id="info5">
+				<h6><b>1.1.3 Arquitectura de Multiprocesamiento.</b><br>
+					<br>
+					Un sistema multiproceso o multitarea es aquel que permite ejecutar varios procesos de forma concurrente, la razón es porque actualmente la mayoría de las CPU’s sólo pueden ejecutar un proceso cada vez. La única forma de que se ejecuten de forma simultánea varios procesos es tener varias CPU’s (ya sea en una máquina o en varias, en un sistema distribuido. Un sistema multiproceso o multitarea es aquel que permite ejecutar varios procesos de forma concurrente, un multiprocesador es aquel que cuenta con   dos o más microprocesadores.
+					<br>
+					La ventaja de un sistema multiproceso reside en la operación llamada cambio de contexto. Esta operación consiste en quitar a un proceso de la CPU, ejecutar otro proceso y volver a colocar el primero sin que se entere de nada. Los hilos que se ejecutan comparten  ciertos recursos  como el espacio del mensaje, la cual permite  simplificar el diseño de una aplicación que debe llevar a cabo distintas funciones simultáneamente.
+				</h6>
+			</div>
+		</section>
+		<div class="img3">
+			<img src="D:imagenes/img3.png">
+		</div>
+		<section id="introduccion2">
+			<div id="intro2">
+				<h1><b>1.2 Análisis de Componentes</b><br>
+					<br>
+					Además de las Arquitecturas clásicas  mencionadas anteriormente, en la actualidad han aparecido Arquitecturas híbridas entre la Von Newman y la Harvard, buscando conservar la flexibilidad, pero mejorando el rendimiento.
+					<br>
+					Esta escuela pretende aplicar un enfoque totalmente distinto al tradicional hasta entonces, que pasó a conocerse como computadoras de conjunto complejo de instrucciones (CISC) para diferenciarla de la nueva tendencia.</h1>
+			</div>
+		</section>
+		<section id="CPU">
+			<div id="info6">
+				<h2><b>1.2.1.1 Unidad Central de Procesamiento</b><br>
+					<br>
+					Se trata de un componente que se encuentra en los ordenadores, Smartphone, tabletas o portátiles, el cual es de suma importancia ya que, sin él, el dispositivo no podría funcionar.
+					<br>
+					Se le conoce de dos maneras: microprocesador y procesador aunque suele ser llamado también como el "cerebro del dispositivo".
+					<br>
+					Su función es procesar las instrucciones del dispositivo, leyendo las mismas y los requisitos del sistema operativo, así mismo, también procesa las instrucciones de los componentes del dispositivo y las aplicaciones. Asi mismo controla el buen funcionamiento del sistema para que todas las acciones sean realizadas en tiempo y forma.
+					<br>
+					<br><i>Partes del CPU</i>
+					<ol start="1">
+						<li><br>Núcleo: Es la unidad base que constituye a un CPU, o que interpreta y ejecuta acciones.<br></li>
+						<li><br>Unidad de Control: Es un circuito digital que extrae la instrucción de la memoria, la descifra y la ejecuta.<br></li>	
+						<li><br>Unidad aritmética lógica:Es un circuito digital que lleva a cabo las operaciones lógicas, matemáticas y aritméticas entre los datos.<br></li>
+						<li><br>Unidad de coma flotante: es un componente especializado en el cálculo de operaciones con coma flotante.<br></li>
+						<li><br>Registros: Es una memoria de alta velocidad que permite controlar y almacenar las instrucciones en ejecución.<br></li>
+						<li><br>Controlador de memoria: Es un circuito que puede estar integrado al procesador y que regula el flujo de datos entre el procesador y la memoria.<br></li>
+						<li><br>Bus: Es un sistema digital que envía y recibe datos entre componentes.<br></li>
+						<li><br>Tarjeta gráfica: Es el componente que procesa los datos de video e imagen, que puede estar incluido o no en el CPU.<br></li>	
+					</ol>
+					<br>
+
+
+					</h2>
+			</div>
+		</section>
+		<br>
+		<div align="center">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/A1FijR9l16Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>			
+		</div>		
+		<br>
+		<section id="ALU">
+			<div id="info7">
+				<h3><b>1.2.1.2 Unidad Aritmética lógica</b><br>
+					<br>
+					Es un circuito digital que realiza las operaciones artiméticas y lógicas entre los datos de un circuito; suma, resta, división y multiplicación, así como establece comparaciones lógicas a tráves de los condicionales lógicos "si", "no", y, "ó".<br>
+					Todos los microprocesadores (CPU's) incluyen al menos una ALU (unidad aritmética lógica), que varía su poder y comlejidad según su finalidad.
+					<br>
+					<br><b>Operaciones de la ALU:</b>
+					<br>
+					Con respecto a cualquier procesador, las instrucciones involucran operaciones sobre un operando, o entre dos de ellos, estando uno de los mismos almacenado en el registro acumulador que es el registro de trabajo de cualquier ALU<br>
+					El tipo de operaciones que puede realizar una ALU, pueden ser los siguientes:
+					<ol start="1">
+						<li><br>Suma aritmética.<br></li>
+						<li><br>Resta aritmética (complemento a 2).<br></li>
+						<li><br>Operaciones lógicas (producto y suma lógica, comparación y complementación enmascaramiento).<br></li>
+						<li><br>Desplazamiento o rotación.<br></li>
+						<li><br>Transferencia.<br></li>																				
+					</ol>
+				</h3>
+			</div>
+		</section>
+		<section id="Registros">
+			<div id="info8">
+				<h4><b>1.2.1.3 Registros</b><br>
+					<br>
+					Un registro es una memoria que esta ubicada en el procesador y se encuentra en el nivel más alto en la jerarquía de memoria, por lo tanto tiene una alta velocidad pero con poca capacidad para almacenar datos que va desde los 4 bits hasta los 64 bits dependiendo del procesador que se utilice. Los datos que almacena son los que se usan frecuentemente.<br>
+					<br>
+					<i>Registros GPR:</i><br>
+					Registros de propósito general (en inglés GPRs o General Purpose Registers), es un registro es una memoria de alta velocidad y poca capacidad, integrada en el microprocesador.<br>
+					<br>
+					<i>Registros apuntadores y de índices:</i><br>
+					<ol start="1">
+						<li><br>SP (Apuntador de pila): Contiene el desplazamiento con respecto al segmento de pila del tope de la pila del programa. El registro SP se emplea para direccionar datos en la pila cuando se ejecutan las instrucciones push y pop y cuando se llama o se regresa de un procedimiento mediante las instrucciones: call y ret, respectivamente.<br></li>
+						<li><br>BP (Apuntador de base): Contiene el desplazamiento con respecto al segmento de pila de datos almacenados en la pila de un programa.<br></li>
+						<li><br>DI (Índice destino): Contiene el desplazamiento con respecto al segmento extra de un elemento de una cadena o arreglo.<br></li>
+						<li><br>SI (Índice fuente): Contiene el desplazamiento con respecto al segmento de datos de un elemento de un arreglo o cadena.<br></li>
+						<li><br> IP (Apuntador de instrucciones): Contiene siempre el desplazamiento con respecto al segmento de código de la localidad de memoria que contiene la siguiente instrucción que va a ejecutar el microprocesador.<br></li>
+					</ol>
+					<br>
+					<i>Registros de Segmentos:</i><br>
+					<ol start="1">
+						<li><br>CS (Código): Tiene la dirección lógica del segmento en que se encuentra el código de un programa. Si el código ocupa más de un segmento, contiene la dirección lógica de uno de los segmentos.<br></li>
+						<li><br>DS (Datos): Tiene la dirección lógica del segmento en que se encuentran los datos estáticos de un programa. Si los datos ocupan más de un segmento, contiene la dirección lógica de uno de los segmentos.<br></li>
+						<li><br>ES (Extra): Este registro también tiene la dirección lógica de uno de los segmentos en que se encuentran los datos estáticos de un programa. Este registro se utiliza en ciertas operaciones del microprocesador para el manejo de cadenas.<br></li>
+						<li><br>SS (Pila): Tiene la dirección lógica del segmento en que se encuentran la pila del sistema. La pila no puede ser mayor a un segmento.<br></li>
+					</ol>
+					<br>
+					<i>Registros de Control:</i><br>
+					Se utilizan para controlar las operaciones del procesador, la mayor parte de estos registros no son visibles al usuario y algunos pueden ser accesibles a las instrucciones de maquina ejecutadas en un modo de control. Los registros utilizados son los siguientes:
+					<ol start="1">
+						<li><br>Registro de direcciones de memoria (MAR), el cual contiene la dirección en donde se efectuará la próxima lectura o escritura de datos. El numero de direcciones depende del tamaño de la MAR.<br></li>
+						<li><br>Registro de datos de memoria (MBR), contiene los datos que van a ser escritos en la memoria o los que fueron leídos en ella.<br></li>
+						<li><br>Registro de direcciones de entrada y salida (I/O AR), especifica al dispositivo ya sea de entrada o salida.<br></li>
+						<li><br>Registro de datos de entrada y salida (I/O BR), es una área temporal en donde se lleva a cabo el intercambio de datos entre el procesador y el dispositivo de entrada y salida que esta especificado en IOAR.<br></li>
+						<li><br>Registro de instrucciones (IR), contiene la dirección de la siguiente instrucción que se va a ejecutar.<br></li>
+						<li><br>Palabras de estado del programa (PSW), contiene códigos de condición junto con otras informaciones de estado como el signo, acarro, desbordamiento, entre otras.<br></li>
+					</ol>
+				</h4>
+			</div>
+		</section>
+		<div class="img4">
+			<img src="D:imagenes/img4.png">
+		</div>
+		<section id="Buses">
+			<div id="info9">
+				<h5>
+					<b>1.2.1.4 Buses.</b><br>
+					<br>
+					Se denomina bus, en informática, al conjunto de conexiones físicas (cables, placa de circuito impreso, etc.) que pueden compartirse con múltiples componentes de hardware para que se comuniquen entre sí.<br>
+					El propósito de los buses es reducir el número de rutas necesarias para la comunicación entre los distintos componentes, al realizar las comunicaciones a través de un solo canal de datos. Ésta es la razón por la que, a veces, se utiliza la metáfora «autopista de datos».
+					<br>
+					Un bus se caracteriza por la cantidad de información que se transmite en forma simultánea. Este volumen se expresa en bits y corresponde al número de líneas físicas mediante las cuales se envía la información en forma simultánea.
+					<br>
+					Por otra parte, la velocidad del bus se define a través de su frecuencia (que se expresa en Hercios o Hertz), es decir el número de paquetes de datos que pueden ser enviados o recibidos por segundo. Cada vez que se envían o reciben estos datos podemos hablar de ciclo.<br>
+					<br>
+					<i>Subconjunto de un bus:</i>
+					<br>
+					Cada bus se halla generalmente constituido por entre 50 y 100 líneas físicas distintas que se dividen a su vez en tres subconjuntos:
+					<ol start="1">
+						<li><br>El bus de direcciones, (también conocido como bus de memoria) transporta las direcciones de memoria al que el procesador desea acceder, para leer o escribir datos. Se trata de un bus unidireccional.<br></li>
+						<li><br>El bus de datos transfiere tanto las instrucciones que provienen del procesador como las que se dirigen hacia él. Se trata de un bus bidireccional.<br></li>
+						<li><br>El bus de control (en ocasiones denominado bus de comando) transporta las órdenes y las señales de sincronización que provienen de la unidad de control y viajan hacia los distintos componentes de hardware. Se trata de un bus bidireccional en la medida en que también transmite señales de respuesta del hardware.<br></li>
+					</ol>
+					<br>
+					<i>Buses principales:</i>
+					<br>
+					<ol start="1">
+						<li><br>Bus interno o sistema (que también se conoce como bus frontal o FSB). El bus interno permite al procesador comunicarse con la memoria central del sistema (la memoria RAM).<br></li>
+						<li><br>Bus de expansión (llamado algunas veces bus de entrada/salida) permite a diversos componentes de la placa madre (USB, puerto serial o paralelo, tarjetas insertadas en conectores PCI, discos duros, unidades de CD-ROM y CD-RW, etc.) comunicarse entre sí. Sin embargo, permite principalmente agregar nuevos dispositivos por medio de las ranuras de expansión que están a su vez conectadas al bus de entrada/salida.<br></li>
+					</ol>
+				</h5>
+			</div>
+		</section>
+		<div class="img5">
+			<img src="D:imagenes/img5.jpg">
+		</div>
+		<section id="Memoria">
+			<div id="intro3">
+				<h6><b>Memoria:</b><br>
+					<br>
+					Es un dispositivo que puede mantenerse en por lo menos dos estados estables por un cierto periodo de tiempo.<br>
+					Cada uno de estos estados estables puede utilizarse para representar un bit.<br>
+					A un dispositivo con la capacidad de almacenar por lo menos un bit se le conoce como celda básica de memoria.<br>
+					Un dispositivo de memoria completo se forma con varias celdas básicas y los circuitos asociados para poder leer y escribie dichas celdas básicas, agrupadas como localidades de memoria que permitan almacenar un grupo de N bits.</h6>
+			</div>
+		</section>
+		<section id="MES">
+			<div id="info10">
+				<h1>
+					<b>Módulos de Entrada/Salida:<br>
+					<br>
+					El intercambio de información entre componentes, computadoras y usuarios es realizado mediante dispositivos que denominamos de manera genérica periféricos.<br>
+					Para hacer una operación entre el procesador y un periférico, es necesario conectar estos dispositivos a la computadora y gestionar de manera efectiva la transferencia de datos.<br>
+					Para poder realizarlo, la computadora dispone del sistema de módulos de Entrada/Salida E/S.<br>
+					Estos módulos son los interfaces que tiene la computadora con el exterior y el objetivo que tiene es facilitar las operaciones de E/S entre los periféricos y la memoria o los registros del procesador.<br>
+					<br>
+					Los módulos E/S están conectados con el procesador y la memoria principal, y cada uno controla uno o más dispositivos externos.<br>
+					La arquitectura E/S es su interfaz con el exterior, esta arquitectura se diseña de manera que permita una forma sistemática de controlar las interacciones con el mundo exterior y proporcione al sistema operativo la información que necesita para gestionar la actividad de E/S.</b>
+				</h1>
+			</div>
+		</section>
+</body>
+</html>

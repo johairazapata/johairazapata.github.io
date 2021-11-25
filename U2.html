@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta class="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Unidad 2</title>
+	<link rel="stylesheet" href="U2.css">
+</head>
+<body>
+	<nav class="navegacion">
+		<div id="its">
+			<img src="D:imagenes/ITS.png"= alt = "">
+		</div>
+		<ul>
+			<li><a href="index.html">Inicio</a></li>
+			<li><a href="U1.html">Unidad 1</a></li>
+			<li><a href="U2.html">Unidad 2</a></li>
+			<li><a href="U3.html">Unidad 3</a></li>
+			<li><a href="U4.html">Unidad 4</a></li>
+		</ul>
+	</nav>
+	<div class="main">
+		<section id="Temario">
+			<div id="temas">
+				<h1>
+					<b>Temario Unidad 2</b>
+					<br>
+					Estructura y funcionamiento de la Unidad Central de Procesamiento
+					<br>
+					<br><b>2.1 Organización del procesador.</b>
+					<br>
+					<br><b>2.2 Estructura de registros.</b>
+					<br><i>2.2.1 Registros visibles para el usuario.</i>
+					<br>
+					<br><i>2.2.2 Registros de control y de estados.</i>
+					<br>
+					<br><i>2.2.3 Ejemplos de registros de CPU reales.</i>
+					<br>
+					<br><b>2.3 El cilo de instrucción.</b>
+					<br>
+					<br><i>2.3.1 Ciclo Fetch-Decode-Execute.</i>
+					<br>
+					<br><i>2.3.2 Segmentación de instrucciones.</i>
+					<br>
+					<br><i>2.3.3 Conjunto de intrucciones. Características y funciones.</i>
+					<br>
+					<br><i>2.3.4 Modos de direccionamiento.</i>
+					<br>
+					<br><b>2.4 Casos de estudio de CPU reales.</b>
+				</h1>
+			</div>
+		</section>
+	</div>
+	<div class="ac">
+		<section id="OP">
+			<div id="op">
+				<h1><b>Organización del procesador.</b><br>
+				<br>
+				Un procesador, incluye tanto registros visibles por el usuario como registros de control/estado. Los registros visibles por el usuario pueden ser de uso general o tener una utilidad especial, mientras que los registros de control y estado se usan para controlar el funcionamiento del procesador, un claro ejemplo es el contador de programa. La segmentación de cauce se puede dividir en ciclo de instrucción en varias etapas separadas que operan secuencialmente, tales como la captación de instrucción, decodificación de instrucción, cálculo de direcciones de operando, ejecución de instrucción y estructura del operando resultado. Un registro es una memoria de alta velocidad y poca capacidad, integrada en el microprocesador, que permite guardar transitoriamente y acceder a valores muy usados, generalmente en operaciones matemáticas. Su función es la de almacenar datos, siendo la manera más rápida de hacerlo por el sistema. Los registros se miden en número de bits que almacenan.
+				</h1>				
+			</div>
+		</section>
+		<section id="RPE">
+			<div id="rpe">
+				<h1><b>Registros de propósito específico.</b><br>
+					<br>
+					Almacenan información específica sobre el estado del sistema como el puntero de pila o el registro de estado.Los más importantes son el contador de programa (PC), el registro de banderas, y el apuntador de pila (SP).<br>
+					Sus funciones son las siguientes: Ahorro de instrucciones ya que el resultado de cualquier instrucción que opere con la memoria se puede guardar en el registro específico para una rápida búsqueda, y, permite llevar un récord del estado del procesador en todo momento.
+				</h1>
+			</div>
+		</section>
+		<section id="FR">
+			<div id="fr">
+				<h1>
+				<b>Función de los registros.</b>
+				<br>
+				Los registros están en la cumbre de la jerarquía de memoria, y son la manera más rápida que tiene el sistema de almacenar datos. Los registros se miden generalmente por el número de bits que almacenan; por ejemplo, un "registro de 8 bits" o un "registro de 32 bits “. El CPU contiene un conjunto de localidades de almacenamiento temporal de datos de alta velocidad llamada registro. Algunos de los registros están dedicados al control, y solo la unidad de control tiene acceso a ellos. Los registros restantes son los registros de uso general y el programador es el usuario que tiene acceso a ellos.
+				</h1>
+			</div>
+		</section>
+		<section id="ER">
+			<div id="er">
+				<h1>
+				<b>Estructura de los registros.</b>
+				<br>
+				Un registro es una memoria que está ubicada en el procesador y se encuentra en el nivel más alto en la jerarquía de memoria, por lo tanto tiene una alta velocidad pero con poca capacidad para almacenar datos que va desde los 4 bits hasta los 64 bits dependiendo del procesador que se utilice. Los datos que almacena son los que se usan frecuentemente . El Registro está organizado en una estructura jerárquica compuesta por subárboles con sus respectivas claves, subclaves y entradas.	
+				</h1>
+			</div>
+		</section>
+		<section id="RVU">
+			<div id="rvu">
+				<h1>
+				<b>Registros visibles para el usuario.</b>
+				<br>
+				Son aquellos que pueden ser referenciado por medio del lenguaje máquina que ejecuta el CPU, los registro que normalmente están disponibles son:<br>
+				<br>
+				<ol start="1">
+				<li>Registros de propósito general: Son aquellos que pueden guardar tanto datos como direcciones.</li>
+				<li>Registro de datos: Pueden ser asignados por el programador a diversas funciones. En algunos casos son de propósito general y pueden ser empleados por cualquier instrucción de máquina que lleve a cabo operaciones sobre los datos. Registros de direcciones: contienen direcciones en la memoria principal de datos y este tipo de registro puede ser de propósito general o estar a un modo específico de direccionamiento. Códigos de condición, también conocidos como indicadores o flags. Los códigos de condición, son bits activados por el procesador como resultado de determinadas operaciones.</li>
+				<li>Registro de bandera o “FLAGS“.</li>
+				<li>Registros de coma flotante.</li>
+				<li>Registros constantes.</li>	
+				</ol>	
+				</h1>
+			</div>
+		</section>
+		<section id="RCE">
+			<div id="rce">
+				<h1>
+				<b>Registros de control y estado.</b>
+				<br>
+				Se utilizan para controlar las operaciones del procesador, la mayor parte de estos registros no son visibles al usuario y algunos pueden ser accesibles a las instrucciones de maquina ejecutadas en un modo de control. Los registros utilizados son los siguientes: Registro de direcciones de memoria (MAR): el cual contiene la dirección en donde se efectuará la próxima lectura o escritura de datos. El número de direcciones depende del tamaño de la MAR. Registro de datos de memoria (MBR): contiene los datos que van a ser escritos en la memoria o los que fueron leídos en ella. Registro de direcciones de entrada y salida (I/O AR): Especifica al registros de entrada o salida. Registro de datos de entrada y salida (I/O BR): es un área temporal en donde se lleva a cabo el intercambio de datos entre el procesador y el dispositivo de entrada y salida que está especificado en (I/O AR). Registro de instrucciones (IR): contiene la dirección de la siguiente instrucción que se va a ejecutar.	
+				</h1>
+			</div>
+		</section>
+		<section id="RP">
+			<div id="rp">
+				<h1>
+				<b>Registros del procesador.</b>
+				<br>
+				En algún diseño concreto de procesador es posible encontrar otros registros relativos a estado y control. Puede existir un puntero a un bloque de memoria que contenga información de estado adicional . En las máquinas que usan interrupciones vectorizadas puede existir un registro de vector de interrupción. Si se utiliza una pila para llevar a cabo ciertas funciones , se necesita un puntero de pila del sistema. Por último, pueden emplearse registros para el control de operaciones de entrada salida E/S. En el diseño de la organización de los registros de control y estado entran en varios factores. Una cuestión primordial es el soporte del sistema operativo. Algunos tipos de información de control son de utilidad específica para el sistema operativo. Otra decisión importante en el diseño es la distribución de información de control entre registros y memoria. Es frecuente dedicar los primeros pocos cientos o miles de palabras de memoria para fines de control. El diseñador debe decidir cuánta información de control debiera estar en registros y cuánta en memoria.	
+				</h1>
+			</div>
+		</section>
+		<section id="CI">
+			<div id="ci">
+				<h1>
+				<b>Ciclo de la instrucción.</b>
+				<br>
+				El Ciclo Instrucción cuenta con dos fases, la primera es la obtención (búsqueda) y la segunda es la fase de ejecución.
+				<br>
+				<ol>
+				<li><i>Ciclo Fetch-Decode-Exceute.<br>
+						Un ciclo de instrucción (también llamado ciclo de fetch-and-execute o ciclo de fetch-decode-execute en inglés) es el período que tarda la unidad central de procesamiento (CPU) en ejecutar una instrucción de lenguaje máquina. Comprende una secuencia de acciones determinada que debe llevar a cabo el CPU para ejecutar cada instrucción en un programa. Cada instrucción del juego de instrucciones de un CPU puede requerir diferente número de ciclos de instrucción para su ejecución. Un ciclo de instrucción está formado por uno o más ciclos máquina. Para que cualquier sistema de proceso de datos basado en microprocesador (por ejemplo un ordenador o computadora personal) o microcontrolador (por ejemplo un reproductor de MP3) realice una tarea (programa) primero debe buscar cada instrucción en la memoria principal y luego ejecutarla.</i></li>
+						<br>
+				<li><i>Segmentación de instrucciones.<br>
+						El objetivo de la segmentación es ejecutar simultáneamente diferentes etapas de distintas instrucciones, lo cual permite aumentar el rendimiento del procesador sin tener que hacer más rápidas todas las unidades del procesador y sin tener que duplicarlas. La división de la ejecución de una instrucción en diferentes etapas se debe realizar de tal manera que cada etapa tenga la misma duración, generalmente un ciclo de reloj. La segmentación es como una cadena de montaje. En cada etapa de la cadena se lleva a cabo una parte del trabajo total y cuando se acaba el trabajo de una etapa. Si hay N etapas, se puede trabajar sobre N productos al mismo tiempo y, si la cadena está bien equilibrada, saldrá un producto acabado en el tiempo que se tarda en llevar a cabo una de las etapas. De esta manera, no se reduce el tiempo que se tarda en hacer un producto, sino que se reduce el tiempo total necesario para hacer una determinada cantidad de productos porque las operaciones de cada etapa se efectúan simultáneamente.</i></li>
+						<br>
+				<li><i>Conjunto de instrucciones.<br>
+						La segmentación de instrucciones es similar al uso de una cadena de montaje en una fábrica de manufacturación. En las cadenas de montaje, el producto pasa a través de varias etapas de producción antes de tener el producto terminado. Cada etapa o segmento de la cadena está especializada en un área específica de la línea de producción y lleva a cabo siempre la misma actividad. Esta tecnología es aplicada en el diseño de procesadores eficientes. A estos procesadores se les conoce como pipeline processors. Estos están compuestos por una lista de segmentos lineales y secuenciales en donde cada segmento lleva a cabo una tarea o un grupo de tareas computacionales. Los datos que provienen del exterior se introducen en el sistema para ser procesados. La computadora realiza operaciones con los datos que tiene almacenados en memoria, produce nuevos datos o información para uso externo.<br>
+						Las arquitecturas y los conjuntos de instrucciones se pueden clasificar considerando aspectos posibles:<br>
+						Almacenamiento de operandos en la CPU: dónde se ubican los operandos aparte de la memoria. Número de operandos explícitos por instrucción: cuántos operandos se expresan en forma explícita en una instrucción típica. Como son 0,1,2,3.<br>
+						Posición del operando: Todos en los registros internos de la CPU. Cómo se especifica la dirección de memoria ,modos de direccionamiento disponible. Operaciones: Qué operaciones están disponibles en el conjunto de instrucciones. Tipo y tamaño de operandos y cómo se especifican.</i></li>
+						<br>
+				</ol>	
+				</h1>
+			</div>
+		</section>
+		<section id="MD">
+			<div id="md">
+				<h1>
+				<b>Modos de direccionamiento.</b>
+				<br>
+				El campo de operación de una instrucción especifica la operación que se debe realizar. Esta debe ser ejecutada sobre algunos datos almacenados en registros del computador o en palabras de memoria, es decir, sobre los operandos. El modo de direccionamiento especifica la forma de interpretar la información contenida en cada campo de operando para localizar, en base a esta información, el operando.
+				<ol>
+					<li><i>Direccionamiento implícito:</i> Depende solamente de la instrucción, es decir, la instrucción no lleva parámetros. Particularmente en instrucciones que no accedan memoria, o bien que tienen una forma específica de accesarla.</li>
+					<li><i>Modo de registro:</i> Usa solamente registros como operandos. Es el más rápido, pues minimiza los recursos necesarios.</li>
+					<li><i>Modo inmediato:</i> Tiene dos operandos: un registro y una constante que se usa por su valor. El valor constante no se tiene que buscar en memoria, pues ya se obtuvo al hacer el “fetch” de la instrucción.</li>
+					<li><i>Modo directo:</i> Uno de los operandos involucra una localidad específica de memoria El valor constante se tiene que buscar en memoria, en la localidad especificada.</li>
+					<li><i>Modo indirecto:</i> Se usan los registros SI, DI como apuntadores El operando indica una localidad de memoria, cuya dirección (sólo la parte desplazamiento) está en SI o DI. Es más lento que los anteriores, pues tiene que “calcular” la localidad.</li>
+				</ol>	
+				</h1>
+			</div>
+		</section>
+	</div>
+</body>
+</html>
